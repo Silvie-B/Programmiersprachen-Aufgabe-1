@@ -4,14 +4,26 @@
 
 int gcd(int a, int b)
 {
+    if (b == 0) {
+        return a;
+        
+    } else if (a == 0) {
+        return b;
+        
+    } else if (a > b) {
+        return gcd(a - b, b);
+        
+    } else {
+        return gcd(a, b - a);
+        
     return 1;
 }
 
 TEST_CASE("describe_gcd" , "[gcd]")
 {
-    REQUIRE(gcd(2,4) == 2);
-    REQUIRE(gcd(9,6) == 3);
-    REQUIRE(gcd(3,7) == 1);
+    REQUIRE(gcd(2 , 4) == 2);
+    REQUIRE(gcd(9 , 6) == 3);
+    REQUIRE(gcd(3 , 7) == 1);
 }
 
 int main(int argc, char* argv[])
