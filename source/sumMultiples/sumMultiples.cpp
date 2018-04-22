@@ -5,25 +5,16 @@
 
 int main()
 {
-    int sum = 0;
-    int i = 1;
+    int sum = 0;            //Hilfsvariable zum speichern der Zwischenergebnisse
+    int i = 1;              //wir beginnen mit 1
     
-    while(i <= 1000){
-        if(i % 3 == 0 || i % 5 == 0){
-            sum+=i;
+    while(i <= 1000){          //solange i kleiner 1000 wird die Schleife durchlaufen
+        if(i % 3 == 0 || i % 5 == 0){       //Bedingung: i muss durch 3 oder 5 teilbar sein, wenn ja kommt bei % 0 raus
+            sum+=i;                         //Hilfsvariable wird mit i addiert
         }
-        i++;
+        i++;                                //i wird um 1 erhöht, Schleife wird erneut durchlaufen
     }
-     std::cout << "Summe ist " << sum << std::endl;
+     std::cout << "Summe ist " << sum << std::endl;     //Ausgabe vom Endergebnis
    
 }
-      
-
     
-
-    
-    /*
-    for(int i= 0; i <= 1000; i++)
-        sum+=i;
-    std::cout << "Summe ist " << sum << std::endl;
-}*/
