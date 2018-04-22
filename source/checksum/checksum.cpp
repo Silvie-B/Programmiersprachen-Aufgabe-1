@@ -2,7 +2,7 @@
 #include <cmath>
 #include "catch.hpp"
 
-int checksum(int a)
+int checksum()
 {
     int sum = 0;
     {
