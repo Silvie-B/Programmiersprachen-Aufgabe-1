@@ -4,16 +4,16 @@
 
 int factorial(int zahl)
 {
-    int fakultaet;
-    if(zahl > 1){
-         fakultaet = zahl * factorial(zahl - 1);
+    int fakultaet;      //Hilfsvariable zum speichern der berechneten Fakultaet
+    if(zahl > 1){       //Solange die Zahl groesser 1 ist wird die Schleife rekursiv durchlaufen
+         fakultaet = zahl * factorial(zahl - 1);    //rekursiver Aufruf der Funktion und multiplizieren mit zahl, Speichern des Zwischenergebnisses in fakultaet
     }
     else{
         return 1;
     }
     return fakultaet;
 }
-
+//Test der Funktion
 TEST_CASE("testing_factorial" , "[factorial]")
 {
     REQUIRE(factorial(3) == 6);
