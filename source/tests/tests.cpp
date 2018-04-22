@@ -22,7 +22,6 @@ int gcd(int a, int b)
         }
         return a;                            //In a wird jetzt der ggT(a,b) gespeichert
     }
-    return 1;
 }
 
 TEST_CASE("describe_gcd" , "[gcd]")

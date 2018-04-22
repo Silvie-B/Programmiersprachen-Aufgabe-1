@@ -14,7 +14,7 @@ int main()
         }
         i++;                                //i wird um 1 erhöht, Schleife wird erneut durchlaufen
     }
-     std::cout << "Summe ist " << sum << std::endl;     //Ausgabe vom Endergebnis
-   
+    std::cout << "Summe ist " << sum << std::endl;     //Ausgabe vom Endergebnis
+    return 0;
 }
     

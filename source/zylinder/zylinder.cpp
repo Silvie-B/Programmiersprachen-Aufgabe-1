@@ -7,11 +7,11 @@
 double oberflaeche(double r, double h)
 {
     double oberfl;
-    if(r >=1 && h >= 1){
-        oberfl = 2 * M_PI * r * (r + h);
+    if(r >=0 && h >= 0){
+        oberfl = 2 * M_PI * r * (r + h);    //Formel: O = 2*pi*r(r+h)
     }
     else{
-        return 1;
+        oberfl = 0;
     }
     return oberfl;
 }
@@ -19,11 +19,11 @@ double oberflaeche(double r, double h)
 double volumen(double r, double h)
 {
     double volumen;
-    if(r >= 1 && h >= 1){
+    if(r >= 0 && h >= 0){
         volumen = M_PI * pow(r, 2) * h;
     }
     else{
-        return 1;
+        volumen = 0;
     }
     return volumen;
 }
