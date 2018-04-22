@@ -1,8 +1,6 @@
 #define CATCH_CONFIG_RUNNER
 #include <cmath>
 #include "catch.hpp"
-#include <stdio.h>
-
 
 bool is_prime (int zahl) {
     
