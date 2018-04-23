@@ -7,8 +7,8 @@ bool is_prime (int zahl) {
     int i;
     bool prim;
         
-    for(i = 2; i < sqrt(zahl); i++){
-        if (zahl % i == 0){
+    for(i = 2; i < sqrt(zahl); i++){    //Man braucht nur von 2 bis zur wurzel der zahl testen, alle größer der Wurzel können keine Teiler sein
+        if (zahl % i == 0){             //wenn zahl mod i = 1 dann ist i kein teiler von zahl und zahl damit nicht prim
             prim = false;
         }
         else{
