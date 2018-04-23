@@ -13,7 +13,7 @@ int factorial(int zahl)
     }
     return fakultaet;
 }
-//Test der Funktion
+
 TEST_CASE("testing_factorial" , "[factorial]")
 {
     REQUIRE(factorial(3) == 6);
@@ -23,5 +23,4 @@ TEST_CASE("testing_factorial" , "[factorial]")
 int main(int argc, char* argv[])
 {
     return Catch::Session().run(argc, argv);
-    return 0;
 }
