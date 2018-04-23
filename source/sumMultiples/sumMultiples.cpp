@@ -1,8 +1,6 @@
 #include <cmath>
 #include "iostream"
 
-
-
 int main()
 {
     int sum = 0;            //Hilfsvariable zum speichern der Zwischenergebnisse
@@ -17,4 +15,3 @@ int main()
     std::cout << "Summe ist " << sum << std::endl;     //Ausgabe vom Endergebnis
     return 0;
 }
-    
