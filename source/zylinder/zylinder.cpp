@@ -20,7 +20,7 @@ double volumen(double r, double h)
 {
     double volumen;
     if(r >= 0 && h >= 0){
-        volumen = M_PI * pow(r, 2) * h;
+        volumen = M_PI * pow(r, 2) * h; //Formel: V = pi * r^2 * h
     }
     else{
         volumen = 0;
@@ -34,20 +34,9 @@ TEST_CASE("oberflaeche" , "[oberflaeche]")
     REQUIRE(volumen(4.0, 4.0) == Approx(201.062));
 }
 
-
-int main(int argc, char* argv[])
+ 
+ int main(int argc, char* argv[])
 {
     return Catch::Session().run(argc, argv);
     return 0;
 }
-
-
-/*int main()
-{
-    double oberfl;
-    oberfl = oberflaeche(4, 4);
-    std::cout << "Die Oberfläche beträgt" << oberfl << std:: endl;
-    double volumen1;
-    volumen1 = volumen(4, 4);
-    std::cout << "Das Volumen beträgt" << volumen1 << std::endl;
-}*/
